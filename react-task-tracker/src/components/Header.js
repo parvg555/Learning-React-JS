@@ -5,13 +5,13 @@ import Button from './Button'
 const Header = (props) => {
 
     const onClick = (e) => {
-        console.log("Button clicked")
+        props.onAdd()
     }
 
     return (
         <header className='header'>
             <h1>{props.title}</h1> 
-            <Button text = "Add" onClick = {onClick} />
+            <Button text = {!props.showAdd ? "Add" : "Close"} onClick = {onClick} />
         </header>
     )
 }

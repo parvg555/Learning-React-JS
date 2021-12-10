@@ -1,3 +1,28 @@
 node_modules
 package-lock.json
 package.json
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/react-task-tracker/node_modules
+/react-task-tracker/.pnp
+/react-task-tracker/.pnp.js
+
+# testing
+/react-task-tracker/coverage
+
+# production
+/react-task-tracker/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+README.md
